@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pruebas con firebase</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="app/app.css">
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/5.0.4/firebase-storage.js"></script>
+    <script defer src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script defer src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script defer src="app/components/home.js"></script>
+    <script defer src="app/components/list.js"></script>
+    <script defer src="app/components/login.js"></script>
+    <script defer src="app/app.js"></script>
+  </head>
+  <body>
+    <div id="app" class="grid-container">
+
+      <header>
+        <nav class="menu">
+          <router-link class="menu-item"  to="/">
+            <span class="menu-item-text">inicio</span>
+          </router-link>
+          <router-link class="menu-item" to="/listas">
+            <span class="menu-item-text">listas</span>
+          </router-link>
+          <router-link class="menu-item" to="/login">
+            <span class="menu-item-text">login</span>
+          </router-link>
+        </nav>
+      </header>
+
+      <router-view class="container"></router-view>
+
+      <footer>
+        <p>rafaelgp87</p>
+      </footer>
+
+    </div>
+  </body>
+</html>

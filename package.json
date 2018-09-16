@@ -1,0 +1,21 @@
+{
+  "name": "node-firebase",
+  "version": "1.0.0",
+  "description": "Proyecto de prueba usando firebase",
+  "main": "server.js",
+  "keywords": [
+    "rafaelgp87",
+    "javascript",
+    "firebase"
+  ],
+  "author": "rafaelgp87",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "firebase-admin": "^6.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

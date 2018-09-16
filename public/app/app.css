@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body, html {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.grid-container {
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-rows: 10% auto 10%;
+  grid-template-columns: auto 60% auto;
+  grid-template-areas:
+    "header header header"
+    ". content ."
+    "footer footer footer";
+  background: #8360c3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #2ebf91, #8360c3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #2ebf91, #8360c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0px;
+}
+
+header {
+  grid-area: header;
+}
+
+.menu{
+  height: 40px;
+  background:rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.menu-item {
+  font-weight:600;
+  text-decoration:none;
+  color:#ffffff;
+  height: 100%;
+  margin-left: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menu-item-text {
+  padding: 1em;
+}
+
+.menu-item:hover {
+  background:rgba(0,0,0,0.3);
+}
+
+.container {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+  background:rgba(0,0,0,0.5);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  color: rgb(214, 211, 211);
+}
+
+/* css para Componentes */
+
+.component-home,
+.component-list {
+  height: 85vh;
+  width: 100%;
+}
+
+.formulario-login {
+  text-align: center;
+  display: inline-block;
+}
+
+.container-list {
+  color: rgb(214, 211, 211);
+  background:rgba(0,0,0,0.5);
+  width: auto;
+  height: auto;
+  padding: 2em;
+}
+
+.formulario-login, div {
+  margin-bottom: 0.5em;
+  margin-left: 0px;
+}
+
+button {
+  color: rgb(214, 211, 211);
+  background:rgba(0,0,0,0.5);
+  padding: 0.5em;
+  width: 15em;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.google {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.facebook {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.subir-archivos {
+  color: rgb(214, 211, 211);
+  background:rgba(0,0,0,0.5);
+  margin-top: 2em;
+  padding: 0.5em;
+}
+
+#uploader {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+img {
+  width: 20em;
+  height: 20em;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+}
